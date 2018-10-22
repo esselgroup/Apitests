@@ -1,0 +1,992 @@
+{
+	"info": {
+		"_postman_id": "02969429-63c3-7dae-aea7-e2d484ec8cc5",
+		"name": "LF_Live",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getBlogById",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"b_name\");",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": "http://api.livingfoodz.com/lfz-orch-creation/contents/blog/getBlogById/1"
+			},
+			"response": []
+		},
+		{
+			"name": "getBlogDataForDetailPage",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"b_id\");",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": "http://api.livingfoodz.com/lfz-orch-creation/contents/blog/getBlogDataForDetailPage/1"
+			},
+			"response": []
+		},
+		{
+			"name": "getAllBlog",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"b_id\");",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": "http://api.livingfoodz.com/lfz-orch-creation/contents/blog/getAllBlog"
+			},
+			"response": []
+		},
+		{
+			"name": "getDistinctValueForKeyword",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"total_count\");",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": "http://api.livingfoodz.com/lfz-orch-creation/contents/blog/getDistinctValueForKeyword/veg"
+			},
+			"response": []
+		},
+		{
+			"name": "getCommentById",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"cm_id\");",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": "http://api.livingfoodz.com/lfz-orch-creation/contents/comment/getCommentById/2"
+			},
+			"response": []
+		},
+		{
+			"name": "getAllCommentList",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"total_count\");",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": "http://api.livingfoodz.com/lfz-orch-creation/contents/comment/getAllCommentList"
+			},
+			"response": []
+		},
+		{
+			"name": "getCuisineById",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"c_id\");",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": "http://api.livingfoodz.com/lfz-orch-creation/contents/cuisine/getCuisineById/10"
+			},
+			"response": []
+		},
+		{
+			"name": "getAllCuisine",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"c_id\");",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": "http://api.livingfoodz.com/lfz-orch-creation/contents/cuisine/getAllCuisine"
+			},
+			"response": []
+		},
+		{
+			"name": "CuisineExistByName",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"c_name\");",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": "http://api.livingfoodz.com/lfz-orch-creation/contents/cuisine/isCuisineExistByName/indian"
+			},
+			"response": []
+		},
+		{
+			"name": "getEpisodeById",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"ep_id\");",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": "http://api.livingfoodz.com/lfz-orch-creation/contents/episode/getEpisodeById/10"
+			},
+			"response": []
+		},
+		{
+			"name": "getEpisodeDataForDetailPage",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "9f51ffbe-a60c-40b8-817b-cd0a8dea73d6",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"ep_name\");",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": "http://api.livingfoodz.com/lfz-orch-creation/contents/episode/getEpisodeDataForDetailPage/10"
+			},
+			"response": []
+		},
+		{
+			"name": "getAllEpisodeList",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "9f6420de-be1b-48a6-90c1-f610c6639bfc",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"ep_id\");",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": "http://api.livingfoodz.com/lfz-orch-creation/contents/episode/getAllEpisodeList"
+			},
+			"response": []
+		},
+		{
+			"name": "getAllEpisodeListByShowId",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "5d9d58ab-e1da-464b-8a0c-77fef2871df6",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"ep_id\");",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://api.livingfoodz.com/lfz-orch-creation/contents/episode/getAllEpisodeListByShowId/{query}?ep_sh_id=12",
+					"protocol": "http",
+					"host": [
+						"api",
+						"livingfoodz",
+						"com"
+					],
+					"path": [
+						"lfz-orch-creation",
+						"contents",
+						"episode",
+						"getAllEpisodeListByShowId",
+						"{query}"
+					],
+					"query": [
+						{
+							"key": "ep_sh_id",
+							"value": "12"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllEpisodeListByUserId",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "78bb97ac-d2ca-4540-96cc-778d0d477b51",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"total_records\");",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": "http://api.livingfoodz.com/lfz-orch-creation/contents/episode/getAllEpisodeListByUserId/20"
+			},
+			"response": []
+		},
+		{
+			"name": "getIngredientById",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "dbf39bda-0e1e-4f7e-b120-3c2cc8679b89",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"i_id\");",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": "http://api.livingfoodz.com/lfz-orch-creation/contents/ingredient/getIngredientById/1"
+			},
+			"response": []
+		},
+		{
+			"name": "getAllIngredient",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "e4f7852f-6bfe-4684-a184-393bdfc90964",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"total_records\");",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": "http://api.livingfoodz.com/lfz-orch-creation/contents/ingredient/getAllIngredient"
+			},
+			"response": []
+		},
+		{
+			"name": "getRecipeById",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "91030c4e-2cd7-4047-bb09-c4ea9d5b9dbb",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"r_id\");",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": "http://api.livingfoodz.com/lfz-orch-creation/contents/recipe/getRecipeById/10"
+			},
+			"response": []
+		},
+		{
+			"name": "getAllRecipeList",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "3b56771b-7740-4e73-82d6-798605210d62",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"r_id\");",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": "http://api.livingfoodz.com/lfz-orch-creation/contents/recipe/getAllRecipeList"
+			},
+			"response": []
+		},
+		{
+			"name": "getRecipeDataForDetailPage",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6795ad4b-a253-4af3-8bd5-7887060009fe",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"r_id\");",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": "http://api.livingfoodz.com/lfz-orch-creation/contents/recipe/getRecipeDataForDetailPage/10"
+			},
+			"response": []
+		},
+		{
+			"name": "getAllRoles",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "d54cbf5f-d1ce-44fc-aa00-f4dc92689593",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"user\",\"admin\",\"super_admin\");",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": "http://api.livingfoodz.com/lfz-orch-creation/contents/rolePermission/getAllRoles"
+			},
+			"response": []
+		},
+		{
+			"name": "getAllPermissions",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "970e47c7-9f3e-4bf3-81ea-5921498130c1",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"blogs_edit\",\"blogs_view\",\"users_edit\");",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": "http://api.livingfoodz.com/lfz-orch-creation/contents/rolePermission/getAllPermissions"
+			},
+			"response": []
+		},
+		{
+			"name": "getRolePermissions",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "0ac192fe-2abf-43c4-aecb-55a6840a66bf",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"basic\");",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": "http://api.livingfoodz.com/lfz-orch-creation/contents/rolePermission/getRolePermissions/user"
+			},
+			"response": []
+		},
+		{
+			"name": "getUserPermissionByUserId",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "54e35f55-81bd-4e76-ab5c-8c13fbf967ab",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"blogs_edit\",\"blogs_view\",\"users_edit\",\"users_view\");",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": "http://api.livingfoodz.com/lfz-orch-creation/contents/rolePermission/getUserPermissionByUserId/1"
+			},
+			"response": []
+		},
+		{
+			"name": "getAllSearchList",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "d7a64c35-556e-48dd-942a-4e3905b368d8",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"r_id\");",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": "http://api.livingfoodz.com/lfz-orch-creation/contents/search/getAllSearchList"
+			},
+			"response": []
+		},
+		{
+			"name": "getIndividualSearchList",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "69f6309c-d537-4294-bfdf-abb762f819fe",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"b_id\");",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": "http://api.livingfoodz.com/lfz-orch-creation/contents/search/getIndividualSearchList/Stories"
+			},
+			"response": []
+		},
+		{
+			"name": "getAllCuratedList",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "8584ca85-d7b0-41be-b317-59ffde0fa163",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"r_id\");",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": "http://api.livingfoodz.com/lfz-orch-creation/contents/search/getAllCuratedList"
+			},
+			"response": []
+		},
+		{
+			"name": "getShowById",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "3917d2bf-1010-46db-9ccf-9a4580200064",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"s_id\");",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": "http://api.livingfoodz.com/lfz-orch-creation/contents/show/getShowById/10"
+			},
+			"response": []
+		},
+		{
+			"name": "getShowDataForDetailPage",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "320c9a0e-542c-4300-8db2-8df387d744aa",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"s_id\");",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": "http://api.livingfoodz.com/lfz-orch-creation/contents/show/getShowDataForDetailPage/10"
+			},
+			"response": []
+		},
+		{
+			"name": "getAllShowList",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "1e05055a-b15e-498b-b860-1662cff91730",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"s_id\");",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": "http://api.livingfoodz.com/lfz-orch-creation/contents/show/getAllShowList"
+			},
+			"response": []
+		},
+		{
+			"name": "getCollection",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "eeae34fe-42af-454d-b892-2b4d192af176",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"ts_name\");",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": "http://api.livingfoodz.com/lfz-orch-creation/contents/topCollection/getCollection/top_stories"
+			},
+			"response": []
+		},
+		{
+			"name": "getVoteByHashIdAndType",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "b2f64ed1-3616-4ef5-ab30-8f7bfbaf0890",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"v_id\");",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": "http://api.livingfoodz.com/lfz-orch-creation/contents/vote/getVoteByHashIdAndType/91cb97b270fc6e620df437bd845edbd9/entertainer"
+			},
+			"response": []
+		},
+		{
+			"name": "getAllVote",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "3b32cbff-873d-4a87-8c0e-60e4c422d15c",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"v_id\");",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": "http://api.livingfoodz.com/lfz-orch-creation/contents/vote/getAllVote"
+			},
+			"response": []
+		},
+		{
+			"name": "getAllChef",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "053f3fbf-ba06-4ca3-960d-7d94c5094709",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"u_id\");",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": "http://api.livingfoodz.com/lfz-orch-creation/users/user/getAllChef"
+			},
+			"response": []
+		},
+		{
+			"name": "getAllUsers",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "78acd73e-6a26-4262-8be8-e01216cd4018",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"u_id\");",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": "http://api.livingfoodz.com/lfz-orch-creation/users/user/getAllUsers"
+			},
+			"response": []
+		},
+		{
+			"name": "getUserById",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "ff92da8f-fd2e-4d08-806f-9e4ca4f99617",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"u_id\");",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": "http://api.livingfoodz.com/lfz-orch-creation/users/user/getUserById/1"
+			},
+			"response": []
+		},
+		{
+			"name": "userLogin",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "69354d32-b187-4517-9844-c1a624085cd0",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"u_id\");",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"u_email\": \"vermaravi9541@gmail.com\",\r\n  \"u_password\": \"password\",\r\n  \"login_type\": \"email\",\r\n  \"u_roles\": \"user\"\r\n}"
+				},
+				"url": "http://api.livingfoodz.com/lfz-orch-creation/users/user/userLogin"
+			},
+			"response": []
+		}
+	]
+}

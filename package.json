@@ -1,0 +1,15 @@
+{
+  "name": "restapitesting",
+  "version": "1.0.0",
+  "description": "profect for storing postman tests",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "api-test-production": "newman run test/LF_Live.postman_collection.json"
+  },
+  "author": "ravindra",
+  "dependencies": {
+    "newman": "^4.1.0"
+  }
+}
